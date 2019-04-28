@@ -161,3 +161,30 @@ bool DecodeBase58Check(const std::string& str, std::vector<unsigned char>& vchRe
 {
     return DecodeBase58Check(str.c_str(), vchRet);
 }
+
+#ifdef ENABLE_BITCORE_RPC
+bool DecodeIndexKey(const std::string &str, uint160 &hashBytes, int &type)
+{
+    CTxDestination dest = DecodeDestination(str);
+    if (IsValidDestination(dest))
+    {
+        const CKeyID *keyID = boost::get<CKeyID>(&dest);
+        if(keyID)
+        {
+            memcpy(&hashBytes, keyID, 20);
+            type = 1;
+            return true;
+        }
+
+        const CScriptID *scriptID = boost::get<CScriptID>(&dest);
+        if(scriptID)
+        {
+            memcpy(&hashBytes, scriptID, 20);
+            type = 2;
+            return true;
+        }
+    }
+
+    return false;
+}
+#endif

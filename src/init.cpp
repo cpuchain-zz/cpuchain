@@ -405,6 +405,11 @@ void SetupServerArgs()
     hidden_args.emplace_back("-sysperms");
 #endif
     gArgs.AddArg("-txindex", strprintf("Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)", DEFAULT_TXINDEX), false, OptionsCategory::OPTIONS);
+#ifdef ENABLE_BITCORE_RPC
+    gArgs.AddArg("-addressindex", strprintf("Maintain a full address index (default: %u)", DEFAULT_ADDRESSINDEX), false, OptionsCategory::OPTIONS);
+    gArgs.AddArg("-timestampindex", strprintf("Maintain a timestamp index for block hashes, used to query blocks hashes by a range of timestamps (default: %u)", DEFAULT_TIMESTAMPINDEX), false, OptionsCategory::OPTIONS);
+    gArgs.AddArg("-spentindex", strprintf("Maintain a full spent index, used to query the spending txid and input index for an outpoint (default: %u)", DEFAULT_SPENTINDEX), false, OptionsCategory::OPTIONS);
+#endif
 
     gArgs.AddArg("-addnode=<ip>", "Add a node to connect to and attempt to keep the connection open (see the `addnode` RPC command help for more info). This option can be specified multiple times to add multiple nodes.", false, OptionsCategory::CONNECTION);
     gArgs.AddArg("-banscore=<n>", strprintf("Threshold for disconnecting misbehaving peers (default: %u)", DEFAULT_BANSCORE_THRESHOLD), false, OptionsCategory::CONNECTION);
@@ -1450,6 +1455,16 @@ bool AppInitMain(InitInterfaces& interfaces)
     nTotalCache = std::max(nTotalCache, nMinDbCache << 20); // total cache cannot be less than nMinDbCache
     nTotalCache = std::min(nTotalCache, nMaxDbCache << 20); // total cache cannot be greater than nMaxDbcache
     int64_t nBlockTreeDBCache = std::min(nTotalCache / 8, nMaxBlockDBCache << 20);
+#ifdef ENABLE_BITCORE_RPC
+    if (gArgs.GetBoolArg("-addressindex", DEFAULT_ADDRESSINDEX) || gArgs.GetBoolArg("-spentindex", DEFAULT_SPENTINDEX)) {
+        // enable 3/4 of the cache if addressindex and/or spentindex is enabled
+        nBlockTreeDBCache = nTotalCache * 3 / 4;
+    } else {
+        if (nBlockTreeDBCache > (1 << 21) && !gArgs.GetBoolArg("-txindex", DEFAULT_TXINDEX)) {
+            nBlockTreeDBCache = (1 << 21); // block tree db cache shouldn't be larger than 2 MiB
+        }
+    }
+#endif
     nTotalCache -= nBlockTreeDBCache;
     int64_t nTxIndexCache = std::min(nTotalCache / 8, gArgs.GetBoolArg("-txindex", DEFAULT_TXINDEX) ? nMaxTxIndexCache << 20 : 0);
     nTotalCache -= nTxIndexCache;
@@ -1568,6 +1583,25 @@ bool AppInitMain(InitInterfaces& interfaces)
                 break;
             }
 
+#ifdef ENABLE_BITCORE_RPC
+                // Check for changed -addressindex state
+                if (fAddressIndex != gArgs.GetBoolArg("-addressindex", DEFAULT_ADDRESSINDEX)) {
+                    strLoadError = _("You need to rebuild the database using -reindex-chainstate to change -addressindex");
+                    break;
+                }
+
+                // Check for changed -spentindex state
+                if (fSpentIndex != gArgs.GetBoolArg("-spentindex", DEFAULT_SPENTINDEX)) {
+                    strLoadError = _("You need to rebuild the database using -reindex-chainstate to change -spentindex");
+                    break;
+                }
+
+                // Check for changed -timestampindex state
+                if (fTimestampIndex != gArgs.GetBoolArg("-timestampindex", DEFAULT_TIMESTAMPINDEX)) {
+                    strLoadError = _("You need to rebuild the database using -reindex-chainstate to change -timestampindex");
+                    break;
+                }
+#endif
             if (!fReset) {
                 // Note that RewindBlockIndex MUST run even if we're about to -reindex-chainstate.
                 // It both disconnects blocks based on chainActive, and drops block data in

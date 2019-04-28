@@ -60,4 +60,8 @@ NODISCARD bool DecodeBase58Check(const char* psz, std::vector<unsigned char>& vc
  */
 NODISCARD bool DecodeBase58Check(const std::string& str, std::vector<unsigned char>& vchRet);
 
+#ifdef ENABLE_BITCORE_RPC
+bool DecodeIndexKey(const std::string& str, uint160& hashBytes, int& type);
+#endif
+
 #endif // BITCOIN_BASE58_H
