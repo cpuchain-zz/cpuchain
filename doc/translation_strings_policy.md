@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the Bitcoin Core software.
+This document provides guidelines for internationalization of the CPUchain Core software.
 
 How to translate?
 ------------------
@@ -87,8 +87,8 @@ This adds `<numerusform>`s to the respective `.ts` file, which can be translated
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
         <translation>
-            <numerusform>%n active connection to Bitcoin network</numerusform>
-            <numerusform>%n active connections to Bitcoin network</numerusform>
+            <numerusform>%n active connection to CPUchain network</numerusform>
+            <numerusform>%n active connections to CPUchain network</numerusform>
         </translation>
     </message>
 
