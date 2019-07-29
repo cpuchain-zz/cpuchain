@@ -4118,11 +4118,11 @@ bool static LoadBlockIndexDB(const CChainParams& chainparams)
     pblocktree->ReadReindexing(fReindexing);
     if(fReindexing) fReindex = true;
 
-#ifdef ENABLE_BITCORE_RPC
     // Check whether we have a transaction index
     pblocktree->ReadFlag("txindex", fTxIndex);
     LogPrintf("%s: transaction index %s\n", __func__, fTxIndex ? "enabled" : "disabled");
 
+#ifdef ENABLE_BITCORE_RPC
     // Check whether we have an address index
     pblocktree->ReadFlag("addressindex", fAddressIndex);
     LogPrintf("%s: address index %s\n", __func__, fAddressIndex ? "enabled" : "disabled");
