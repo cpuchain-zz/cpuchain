@@ -74,7 +74,7 @@ void OptionsModel::Init(bool resetSettings)
 
     if (!settings.contains("strThirdPartyTxUrls"))
         settings.setValue("strThirdPartyTxUrls", "");
-    strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
+    strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "https://explorer.cpuchain.org/tx/%s").toString();
 
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);

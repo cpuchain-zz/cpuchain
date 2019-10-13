@@ -67,11 +67,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estás son tus direcciones de Bitcoin para enviar pagos. Verifica siempre el monto y la dirección de recepción antes de enviar monedas.</translation>
+        <translation>Estás son tus direcciones de CPUchain para enviar pagos. Verifica siempre el monto y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son tus direcciones de Bitcoin para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
+        <translation>Estas son tus direcciones de CPUchain para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Atención: Si encriptas tu billetera y pierdes tu contraseña, vas a &lt;b&gt;PERDER TODOS TUS BITCOINS&lt;/b&gt;!</translation>
+        <translation>Atención: Si encriptas tu billetera y pierdes tu contraseña, vas a &lt;b&gt;PERDER TODOS TUS CPUCHAINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Tu billetera quedó encriptada. Recuerda que encriptar tu billetera no protege totalmente tus bitcoins de ser robados por malware que infecte tu computadora.</translation>
+        <translation>Tu billetera quedó encriptada. Recuerda que encriptar tu billetera no protege totalmente tus cpuchains de ser robados por malware que infecte tu computadora.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -251,7 +251,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección Bitcoin</translation>
+        <translation>Enviar monedas a una dirección CPUchain</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -259,7 +259,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -385,7 +385,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>

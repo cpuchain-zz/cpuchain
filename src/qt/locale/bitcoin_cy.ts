@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Rhain ydi eich cyfeiriadau Bitcoin ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
+        <translation>Rhain ydi eich cyfeiriadau CPUchain ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dyma eich cyfeiriadau Bitcoin ar gyfer derbyn taliadau. Argymhellwn ddefnyddio cyfeiriad derbyn newydd ar gyfer bob trafodyn.</translation>
+        <translation>Dyma eich cyfeiriadau CPUchain ar gyfer derbyn taliadau. Argymhellwn ddefnyddio cyfeiriad derbyn newydd ar gyfer bob trafodyn.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Rhybudd: Os ydych yn amgryptio'r waled ag yn colli'r cyfrinair, byddwch yn &lt;b&gt; COLLI EICH BITCOINS I GYD &lt;b&gt; !</translation>
+        <translation>Rhybudd: Os ydych yn amgryptio'r waled ag yn colli'r cyfrinair, byddwch yn &lt;b&gt; COLLI EICH CPUCHAINS I GYD &lt;b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -319,7 +319,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Anfon arian i gyfeiriad Bitcoin</translation>
+        <translation>Anfon arian i gyfeiriad CPUchain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -363,11 +363,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Arwyddo negeseuon gyda eich cyfeiriadau Bitcoin i brofi mae chi sy'n berchen arnynt</translation>
+        <translation>Arwyddo negeseuon gyda eich cyfeiriadau CPUchain i brofi mae chi sy'n berchen arnynt</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau Bitcoin penodol</translation>
+        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau CPUchain penodol</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -387,7 +387,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Gofyn taliadau (creu côd QR a bitcoin: URIs)</translation>
+        <translation>Gofyn taliadau (creu côd QR a cpuchain: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -399,7 +399,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Agor Bitcoin: URI neu ofyn taliad</translation>
+        <translation>Agor cpuchain: URI neu ofyn taliad</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -509,7 +509,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Mae gwall angheuol wedi digwydd. Ni all Bitcoin barhau'n ddiogel ac mae'n cau lawr.</translation>
+        <translation>Mae gwall angheuol wedi digwydd. Ni all CPUchain barhau'n ddiogel ac mae'n cau lawr.</translation>
     </message>
 </context>
 <context>
@@ -616,7 +616,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1026,7 +1026,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Craidd Bitcoin</translation>
+        <translation>Craidd CPUchain</translation>
     </message>
     <message>
         <source>Information</source>

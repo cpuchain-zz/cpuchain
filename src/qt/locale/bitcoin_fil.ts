@@ -67,11 +67,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ito ang iyong mga Bitcoin addresses para sa pagpapadala ng bayad. Laging suriin ang halaga at ang address na tatanggap bago magpadala ng coins.</translation>
+        <translation>Ito ang iyong mga CPUchain addresses para sa pagpapadala ng bayad. Laging suriin ang halaga at ang address na tatanggap bago magpadala ng coins.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ito ang iyong mga Bitcoin addresses para sa pagtanggap ng bayad. Inirerekomenda na gumamit ng bagong tanggapang address sa bawat transaksyon.</translation>
+        <translation>Ito ang iyong mga CPUchain addresses para sa pagtanggap ng bayad. Inirerekomenda na gumamit ng bagong tanggapang address sa bawat transaksyon.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Babala: Kapag i-encrypt mo ang iyong walet at nawala ang iyong passphrase, &lt;b&gt;MAWAWALA ANG LAHAT NG IYONG BITCOINS !</translation>
+        <translation>Babala: Kapag i-encrypt mo ang iyong walet at nawala ang iyong passphrase, &lt;b&gt;MAWAWALA ANG LAHAT NG IYONG CPUCHAINS !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Na-encrypt na ang iyong walet. Tandaan na ang pag-encrypt ng iyong walet ay hindi ganap na proteksyon sa iyong bitcoins na maaaring manakaw sa pamamagitan ng malware na makahawa sa iyong computer.</translation>
+        <translation>Na-encrypt na ang iyong walet. Tandaan na ang pag-encrypt ng iyong walet ay hindi ganap na proteksyon sa iyong cpuchains na maaaring manakaw sa pamamagitan ng malware na makahawa sa iyong computer.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -319,7 +319,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Ipadala ang coins sa Bitcoin address</translation>
+        <translation>Ipadala ang coins sa CPUchain address</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -343,7 +343,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -367,11 +367,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Pirmahan ang mga mensahe gamit ang iyong mga Bitcoin address upang mapatunayang ikaw ang may-ari nito</translation>
+        <translation>Pirmahan ang mga mensahe gamit ang iyong mga CPUchain address upang mapatunayang ikaw ang may-ari nito</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Tiyakin ang katotohanan ng mga mensahe para siguruhing ang mga ito ay pinirmahan gamit ang tinukoy na mga Bitcoin addresses</translation>
+        <translation>Tiyakin ang katotohanan ng mga mensahe para siguruhing ang mga ito ay pinirmahan gamit ang tinukoy na mga CPUchain addresses</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,7 +391,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Humiling ng bayad (lumilikha ng QR codes at bitcoin: URIs)</translation>
+        <translation>Humiling ng bayad (lumilikha ng QR codes at cpuchain: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -403,7 +403,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Buksan ang bitcoin: URI o kahilingan ng bayad</translation>
+        <translation>Buksan ang cpuchain: URI o kahilingan ng bayad</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -467,7 +467,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Ipakita sa %1 ang tulong na mensahe upang makuha ang talaan ng mga posibleng opsyon ng Bitcoin command-line</translation>
+        <translation>Ipakita sa %1 ang tulong na mensahe upang makuha ang talaan ng mga posibleng opsyon ng CPUchain command-line</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -571,7 +571,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>May nangyaring malubhang kamalian. Hindi na kayang magpatuloy ng ligtas ang Bitcoin at ito ay hihinto na.</translation>
+        <translation>May nangyaring malubhang kamalian. Hindi na kayang magpatuloy ng ligtas ang CPUchain at ito ay hihinto na.</translation>
     </message>
 </context>
 <context>
@@ -717,7 +717,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Ang address na in-enter "%1" ay hindi isang wastong Bitcoin address.</translation>
+        <translation>Ang address na in-enter "%1" ay hindi isang wastong CPUchain address.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -806,7 +806,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -818,7 +818,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 ay mag-do-download at magiimbak ng kopya ng Bitcoin blockchain.</translation>
+        <translation>%1 ay mag-do-download at magiimbak ng kopya ng CPUchain blockchain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -841,11 +841,11 @@
     <name>ModalOverlay</name>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Ang mga bagong transaksyon ay hindi pa makikita kaya ang balanse ng iyong walet ay maaaring hindi tama. Ang impormasyong ito ay maiitama pagkatapos ma-synchronize ng iyong walet sa bitcoin network, ayon sa ibaba.</translation>
+        <translation>Ang mga bagong transaksyon ay hindi pa makikita kaya ang balanse ng iyong walet ay maaaring hindi tama. Ang impormasyong ito ay maiitama pagkatapos ma-synchronize ng iyong walet sa cpuchain network, ayon sa ibaba.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Ang pagtangkang gastusin ang mga bitcoin na apektado ng mga transaksyon na hindi pa naipapakita ay hindi tatanggapin ng network.</translation>
+        <translation>Ang pagtangkang gastusin ang mga cpuchain na apektado ng mga transaksyon na hindi pa naipapakita ay hindi tatanggapin ng network.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1015,7 +1015,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Kusang buksan ang Bitcoin client port sa router. Gumagana lamang ito kapag ang iyong router ay sumusuporta ng UPnP at ito ay pinagana.</translation>
+        <translation>Kusang buksan ang CPUchain client port sa router. Gumagana lamang ito kapag ang iyong router ay sumusuporta ng UPnP at ito ay pinagana.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1031,7 +1031,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Kumunekta sa Bitcoin network sa pamamagitan ng SOCKS5 proxy.</translation>
+        <translation>Kumunekta sa CPUchain network sa pamamagitan ng SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1067,7 +1067,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Kumunekta sa Bitcoin network sa pamamagitan ng hiwalay na SOCKS5 proxy para sa mga tagong serbisyo ng Tor.</translation>
+        <translation>Kumunekta sa CPUchain network sa pamamagitan ng hiwalay na SOCKS5 proxy para sa mga tagong serbisyo ng Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>

@@ -18,6 +18,7 @@
 #include <compat/sanity.h>
 #include <consensus/validation.h>
 #include <fs.h>
+#include <hashdb.h>
 #include <httpserver.h>
 #include <httprpc.h>
 #include <interfaces/chain.h>
@@ -97,7 +98,7 @@ static const char* FEE_ESTIMATES_FILENAME="fee_estimates.dat";
 /**
  * The PID file facilities.
  */
-static const char* BITCOIN_PID_FILENAME = "bitcoind.pid";
+static const char* BITCOIN_PID_FILENAME = "cpuchaind.pid";
 
 static fs::path GetPidFile()
 {
@@ -202,7 +203,7 @@ void Shutdown(InitInterfaces& interfaces)
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("bitcoin-shutoff");
+    RenameThread("cpuchain-shutoff");
     mempool.AddTransactionsUpdated(1);
 
     StopHTTPRPC();
@@ -274,6 +275,7 @@ void Shutdown(InitInterfaces& interfaces)
         pcoinscatcher.reset();
         pcoinsdbview.reset();
         pblocktree.reset();
+        phashdb.reset();
     }
     for (const auto& client : interfaces.chain_clients) {
         client->stop();
@@ -551,10 +553,14 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/bitcoin/bitcoin>";
-    const std::string URL_WEBSITE = "<https://bitcoincore.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/cpuchain/cpuchain>";
+    const std::string URL_WEBSITE = "<https://cpuchain.org>";
 
-    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
+    std::string blcCopyright = strprintf(_("Copyright (C) %i"), COPYRIGHT_YEAR) + " " + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
+    std::string btcCopyright = strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " The Bitcoin Core developers";
+
+    return blcCopyright + "\n" +
+           btcCopyright + "\n" +
            "\n" +
            strprintf(_("Please contribute if you find %s useful. "
                        "Visit %s for further information about the software."),
@@ -657,7 +663,7 @@ static void CleanupBlockRevFiles()
 static void ThreadImport(std::vector<fs::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("bitcoin-loadblk");
+    RenameThread("cpuchain-loadblk");
     ScheduleBatchPriority();
 
     {
@@ -1261,9 +1267,9 @@ bool AppInitMain(InitInterfaces& interfaces)
     // Warn about relative -datadir path.
     if (gArgs.IsArgSet("-datadir") && !fs::path(gArgs.GetArg("-datadir", "")).is_absolute()) {
         LogPrintf("Warning: relative datadir option '%s' specified, which will be interpreted relative to the " /* Continued */
-                  "current working directory '%s'. This is fragile, because if bitcoin is started in the future "
+                  "current working directory '%s'. This is fragile, because if cpuchain is started in the future "
                   "from a different location, it will be unable to locate the current data files. There could "
-                  "also be data loss if bitcoin is started while in a temporary directory.\n",
+                  "also be data loss if cpuchain is started while in a temporary directory.\n",
             gArgs.GetArg("-datadir", ""), fs::current_path().string());
     }
 
@@ -1480,6 +1486,10 @@ bool AppInitMain(InitInterfaces& interfaces)
                 // fails if it's still open from the previous loop. Close it first:
                 pblocktree.reset();
                 pblocktree.reset(new CBlockTreeDB(nBlockTreeDBCache, false, fReset));
+
+                // TODO: add cache size option for CHashDB
+                phashdb.reset();
+                phashdb.reset(new CHashDB(nBlockTreeDBCache, false, fReset));
 
                 if (fReset) {
                     pblocktree->WriteReindexing(true);

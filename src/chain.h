@@ -7,6 +7,7 @@
 #define BITCOIN_CHAIN_H
 
 #include <arith_uint256.h>
+#include <hashdb.h>
 #include <consensus/params.h>
 #include <primitives/block.h>
 #include <tinyformat.h>
@@ -433,7 +434,8 @@ public:
         block.nTime           = nTime;
         block.nBits           = nBits;
         block.nNonce          = nNonce;
-        return block.GetHash();
+        assert(phashdb != nullptr); // FIXME: Benchmark and tests don't initialize hash database
+        return phashdb->GetHash(block);
     }
 
 

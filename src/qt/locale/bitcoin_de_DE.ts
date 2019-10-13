@@ -43,7 +43,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind Ihre Bitcoin-Adressen für den Empfang von Zahlungen. Es wird empfohlen, für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <translation>Dies sind Ihre CPUchain-Adressen für den Empfang von Zahlungen. Es wird empfohlen, für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -223,7 +223,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -247,11 +247,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Nachrichten mit Ihrer Bitcoin-Adresse signieren, um zu beweisen, dass sie Ihnen gehören</translation>
+        <translation>Nachrichten mit Ihrer CPUchain-Adresse signieren, um zu beweisen, dass sie Ihnen gehören</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Überprüfen Sie Nachrichten, um sicherzustellen, dass sie mit den angegebenen Bitcoin-Adressen signiert wurden</translation>
+        <translation>Überprüfen Sie Nachrichten, um sicherzustellen, dass sie mit den angegebenen CPUchain-Adressen signiert wurden</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -317,7 +317,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Ein schwerwiegender Fehler ist aufgetreten. Bitcoin kann nicht mehr sicher fortfahren und beendet sich.</translation>
+        <translation>Ein schwerwiegender Fehler ist aufgetreten. CPUchain kann nicht mehr sicher fortfahren und beendet sich.</translation>
     </message>
 </context>
 <context>
@@ -416,7 +416,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -461,7 +461,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Bitcoin Adresse eingeben (z.B. %1)</translation>
+        <translation>CPUchain Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>N/A</source>

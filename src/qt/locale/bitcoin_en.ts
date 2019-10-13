@@ -437,7 +437,7 @@
     <message>
         <location line="-1034"/>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Send coins to a Bitcoin address</translation>
+        <translation>Send coins to a CPUchain address</translation>
     </message>
     <message>
         <location line="+67"/>
@@ -467,7 +467,7 @@
     <message>
         <location line="+724"/>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <location line="-797"/>
@@ -497,12 +497,12 @@
     <message>
         <location line="+7"/>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Sign messages with your Bitcoin addresses to prove you own them</translation>
+        <translation>Sign messages with your CPUchain addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Bitcoin addresses</translation>
+        <translation>Verify messages to ensure they were signed with specified CPUchain addresses</translation>
     </message>
     <message>
         <location line="+118"/>
@@ -554,7 +554,7 @@
         <source>%n active connection(s) to Bitcoin network</source>
         <translation>
             <numerusform>%n active connection to Bitcoin network</numerusform>
-            <numerusform>%n active connections to Bitcoin network</numerusform>
+            <numerusform>%n active connections to CPUchain network</numerusform>
         </translation>
     </message>
     <message>
@@ -1137,7 +1137,7 @@
     <message>
         <location filename="../intro.cpp" line="+22"/>
         <source>Bitcoin</source>
-        <translation type="unfinished">Bitcoin</translation>
+        <translation type="unfinished">CPUchain</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1434,7 +1434,7 @@
     <message>
         <location line="+30"/>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <translation>Automatically open the CPUchain client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1642,7 +1642,7 @@
         <location line="+62"/>
         <location line="+386"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</translation>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the CPUchain network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-139"/>
@@ -3302,7 +3302,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Sign the message to prove you own this Bitcoin address</translation>
+        <translation>Sign the message to prove you own this CPUchain address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3338,7 +3338,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     <message>
         <location line="+37"/>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Bitcoin address</translation>
+        <translation>Verify the message to ensure it was signed with the specified CPUchain address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4196,7 +4196,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     <message>
         <location line="-170"/>
         <source>Bitcoin Core</source>
-        <translation type="unfinished">Bitcoin Core</translation>
+        <translation type="unfinished">CPUchain Core</translation>
     </message>
     <message>
         <location line="+1"/>

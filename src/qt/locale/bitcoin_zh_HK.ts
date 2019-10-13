@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這些是你要付款過去的 Bitcoin 位址。在付款之前，務必要檢查金額和收款位址是否正確。</translation>
+        <translation>這些是你要付款過去的 CPUchain 位址。在付款之前，務必要檢查金額和收款位址是否正確。</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這些是你用來收款的 Bitcoin 位址。建議在每次交易時，都使用一個新的收款位址。</translation>
+        <translation>這些是你用來收款的 CPUchain 位址。建議在每次交易時，都使用一個新的收款位址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>警告: 如果你將錢包加密後又忘記密碼，你就會&lt;b&gt;失去所有 Bitcoin 了&lt;/b&gt;！</translation>
+        <translation>警告: 如果你將錢包加密後又忘記密碼，你就會&lt;b&gt;失去所有 CPUchain 了&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>付款至一個 Bitcoin 位址</translation>
+        <translation>付款至一個 CPUchain 位址</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -331,7 +331,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>要求付款 (產生QR碼 bitcoin: URIs)</translation>
+        <translation>要求付款 (產生QR碼 cpuchain: URIs)</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -408,7 +408,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -449,7 +449,7 @@
     <name>QObject</name>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>輸入一個 Bitcoin 位址 (例如 %1)</translation>
+        <translation>輸入一個 CPUchain 位址 (例如 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
