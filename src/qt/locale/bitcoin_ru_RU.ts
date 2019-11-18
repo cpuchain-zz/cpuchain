@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши биткойн адреса для отправки платежа. Всегда проверяйте сумму и адрес получателя перед отправкой платежа.</translation>
+        <translation>Это ваши ЦПУчейн адреса для отправки платежа. Всегда проверяйте сумму и адрес получателя перед отправкой платежа.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши биткойн адреса для получения платежей. Настоятельно рекомендуем использовать новые адреса для получения каждой транзакции.</translation>
+        <translation>Это ваши ЦПУчейн адреса для получения платежей. Настоятельно рекомендуем использовать новые адреса для получения каждой транзакции.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете ваш кошелек и потеряете ваш пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ БИТКОЙНЫ&lt;/b&gt;!</translation>
+        <translation>Внимание: если вы зашифруете ваш кошелек и потеряете ваш пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ ЦПУчейнЫ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 закроется сейчас для завершения процесса шифрования. Запомните что шифрование вашего кошелька не сможет полностью защитить ваши биткойны от кражи при помощи вредоносного ПО, заразившего ваш компьютер.</translation>
+        <translation>%1 закроется сейчас для завершения процесса шифрования. Запомните что шифрование вашего кошелька не сможет полностью защитить ваши ЦПУчейны от кражи при помощи вредоносного ПО, заразившего ваш компьютер.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -335,7 +335,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Послать средства на биткойн адрес</translation>
+        <translation>Послать средства на ЦПУчейн адрес</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin Core</translation>
+        <translation>CPUchain Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -475,7 +475,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Произошла критическая ошибка. Bitcoin больше не может продолжать безопасную работу и будет закрыт.</translation>
+        <translation>Произошла критическая ошибка. CPUchain больше не может продолжать безопасную работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -650,7 +650,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin Core</translation>
+        <translation>CPUchain Core</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -771,7 +771,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Подключится к сети Bitcoin через SOCKS5 прокси.</translation>
+        <translation>Подключится к сети CPUchain через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1645,7 +1645,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>CPUchain Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -1721,7 +1721,7 @@
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>bitcoin-core</translation>
+        <translation>cpuchain-core</translation>
     </message>
     <message>
         <source>(default: %u)</source>

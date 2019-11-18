@@ -667,6 +667,12 @@ public:
         CScriptBase::clear();
         shrink_to_fit();
     }
+
+#ifdef ENABLE_BITCORE_RPC
+    bool IsPayToPubkey() const;
+    bool IsPayToPubkeyHash() const;
+    bool IsPayToWitnessPubkeyHash() const;
+#endif
 };
 
 struct CScriptWitness

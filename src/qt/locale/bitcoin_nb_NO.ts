@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Bitcoin adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
+        <translation>Dette er dine CPUchain adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dette er dine Bitcoin adresse for å motta betalinger. Det er anbefalt å bruke en ny mottager adresse for hver transaksjon.</translation>
+        <translation>Dette er dine CPUchain adresse for å motta betalinger. Det er anbefalt å bruke en ny mottager adresse for hver transaksjon.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advarsel: Dersom du krypterer lommeboken og mister passordsetningen vil du &lt;b&gt;MISTE ALLE DINE BITCOIN&lt;/b&gt;!</translation>
+        <translation>Advarsel: Dersom du krypterer lommeboken og mister passordsetningen vil du &lt;b&gt;MISTE ALLE DINE CPUCHAIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 vil nå lukkes for å fullføre krypteringsprosessen. Husk at å kryptere lommeboken ikke kan beskytte dine bitcoin fullstendig fra å bli stjålet av skadelig programvare som har infisert datamaskinen din.</translation>
+        <translation>%1 vil nå lukkes for å fullføre krypteringsprosessen. Husk at å kryptere lommeboken ikke kan beskytte dine cpuchain fullstendig fra å bli stjålet av skadelig programvare som har infisert datamaskinen din.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Send mynter til en Bitcoin adresse</translation>
+        <translation>Send mynter til en CPUchain adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -391,11 +391,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signer meldingene med Bitcoin adresse for å bevise at diu eier dem</translation>
+        <translation>Signer meldingene med CPUchain adresse for å bevise at diu eier dem</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifiser meldinger for å sikre at de ble signert med en angitt Bitcoin adresse</translation>
+        <translation>Verifiser meldinger for å sikre at de ble signert med en angitt CPUchain adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Be om betalinger (genererer QR-koder og bitcoin-URIer)</translation>
+        <translation>Be om betalinger (genererer QR-koder og cpuchain-URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -427,7 +427,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Åpne en bitcoin: URI eller betalingsforespørsel</translation>
+        <translation>Åpne en cpuchain: URI eller betalingsforespørsel</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -467,7 +467,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Vis %1-hjelpemeldingen for å få en liste over mulige Bitcoin-kommandolinjealternativer</translation>
+        <translation>Vis %1-hjelpemeldingen for å få en liste over mulige CPUchain-kommandolinjealternativer</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -536,7 +536,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>

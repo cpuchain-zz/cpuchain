@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hierdie is die adresse vanwaar u Bitcoin betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
+        <translation>Hierdie is die adresse vanwaar u CPUchain betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Hierdie is die adresse waar u Bitcoins sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
+        <translation>Hierdie is die adresse waar u CPUchains sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U BITCOINS&lt;/b&gt;!</translation>
+        <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U CPUCHAINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -335,7 +335,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Stuur munte na 'n Bitcoin adres</translation>
+        <translation>Stuur munte na 'n CPUchain adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -387,11 +387,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Onderteken boodskappe met u Bitcoin adresse om u eienaarskap te bewys</translation>
+        <translation>Onderteken boodskappe met u CPUchain adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Bitcoin adresse</translation>
+        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde CPUchain adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -411,7 +411,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Versoek betalings (genereer QR-kodes en bitcoin: URI's)</translation>
+        <translation>Versoek betalings (genereer QR-kodes en cpuchain: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -423,7 +423,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Skep 'n bitcoin: URI of betalingsversoek</translation>
+        <translation>Skep 'n cpuchain: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -517,7 +517,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>'N fatale fout het voorgekom. Bitcoin kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
+        <translation>'N fatale fout het voorgekom. CPUchain kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
     </message>
 </context>
 <context>
@@ -711,7 +711,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Die ingevoerde adres "%1" is nie 'n geldige Bitcoin adres nie.</translation>
+        <translation>Die ingevoerde adres "%1" is nie 'n geldige CPUchain adres nie.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -824,7 +824,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1189,7 +1189,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Voer in 'n Bitcoin adres (bv. %1)</translation>
+        <translation>Voer in 'n CPUchain adres (bv. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1919,7 +1919,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Kern</translation>
+        <translation>CPUchain Kern</translation>
     </message>
     <message>
         <source>Connection options:</source>

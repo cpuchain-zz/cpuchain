@@ -163,11 +163,11 @@
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะส่ง bitcoin</translation>
+        <translation>&amp;ที่เก็บเงิน ที่จะส่ง cpuchain</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะรับ bitcoin</translation>
+        <translation>&amp;ที่เก็บเงิน ที่จะรับ cpuchain</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -179,7 +179,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>ส่ง coins ไปยัง ที่เก็บ Bitcoin</translation>
+        <translation>ส่ง coins ไปยัง ที่เก็บ CPUchain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -203,7 +203,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -231,11 +231,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Bitcoin เพื่อแสดงว่าท่านเป็นเจ้าของ bitcoin นี้จริง</translation>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ CPUchain เพื่อแสดงว่าท่านเป็นเจ้าของ cpuchain นี้จริง</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Bitcoin แล้ว</translation>
+        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ CPUchain แล้ว</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -255,19 +255,19 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ bitcoin: URIs)</translation>
+        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ cpuchain: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง bitcoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง cpuchain ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ bitcoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ cpuchain เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>เปิด bitcoin: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
+        <translation>เปิด cpuchain: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -275,7 +275,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย Bitcoin</numerusform></translation>
+        <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย CPUchain</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -319,7 +319,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Bitcoin command-line</translation>
+        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ CPUchain command-line</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -572,7 +572,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -701,7 +701,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>เปิด Bitcoin ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
+        <translation>เปิด CPUchain ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -709,7 +709,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>เชื่อมต่อกับ Bitcoin เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
+        <translation>เชื่อมต่อกับ CPUchain เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -745,7 +745,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>เชื่อมต่อกับ เครือข่าย Bitcoin ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
+        <translation>เชื่อมต่อกับ เครือข่าย CPUchain ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
     </message>
     <message>
         <source>&amp;Window</source>

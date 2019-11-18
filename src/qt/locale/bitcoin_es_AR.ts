@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son tus direcciones Bitcoin para enviar pagos. Chequea siempre el monto y la dirección destino antes de mandar monedas.
+        <translation>Estas son tus direcciones CPUchain para enviar pagos. Chequea siempre el monto y la dirección destino antes de mandar monedas.
 </translation>
     </message>
     <message>

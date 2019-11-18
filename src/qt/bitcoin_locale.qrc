@@ -55,7 +55,6 @@
         <file alias="is">locale/bitcoin_is.qm</file>
         <file alias="it_IT">locale/bitcoin_it_IT.qm</file>
         <file alias="it">locale/bitcoin_it.qm</file>
-        <file alias="ja_JP">locale/bitcoin_ja_JP.qm</file>
         <file alias="ja">locale/bitcoin_ja.qm</file>
         <file alias="ka">locale/bitcoin_ka.qm</file>
         <file alias="kk_KZ">locale/bitcoin_kk_KZ.qm</file>

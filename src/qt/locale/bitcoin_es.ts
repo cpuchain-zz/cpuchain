@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Bitcoin para enviar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar bitcoins.</translation>
+        <translation>Estas son sus direcciones CPUchain para enviar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar cpuchains.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones Bitcoin para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción</translation>
+        <translation>Estas son sus direcciones CPUchain para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advertencia: Si cifra su monedero y pierde su contraseña&lt;b&gt;¡PERDERÁ TODOS SUS BITCOINS!&lt;/b&gt;</translation>
+        <translation>Advertencia: Si cifra su monedero y pierde su contraseña&lt;b&gt;¡PERDERÁ TODOS SUS CPUCHAINS!&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -343,7 +343,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar bitcoins a una dirección Bitcoin</translation>
+        <translation>Enviar cpuchains a una dirección CPUchain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -367,7 +367,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -395,11 +395,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Bitcoin para demostrar la propiedad</translation>
+        <translation>Firmar mensajes con sus direcciones CPUchain para demostrar la propiedad</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Bitcoin concretas</translation>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones CPUchain concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -419,7 +419,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Solicitar pagos (generando códigos QR e identificadores URI "bitcoin:")</translation>
+        <translation>Solicitar pagos (generando códigos QR e identificadores URI "cpuchain:")</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -431,7 +431,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Abrir un identificador URI "bitcoin:" o una petición de pago</translation>
+        <translation>Abrir un identificador URI "cpuchain:" o una petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -439,7 +439,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Bitcoin</numerusform><numerusform>%n conexiones activas hacia la red Bitcoin</numerusform></translation>
+        <translation><numerusform>%n conexión activa hacia la red CPUchain</numerusform><numerusform>%n conexiones activas hacia la red CPUchain</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -483,7 +483,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de Bitcoin</translation>
+        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de CPUchain</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -553,7 +553,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error fatal. Bitcoin no puede seguir seguro y se cerrará.</translation>
+        <translation>Ha ocurrido un error fatal. CPUchain no puede seguir seguro y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -747,7 +747,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Bitcoin válida.</translation>
+        <translation>La dirección introducida "%1" no es una dirección CPUchain válida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -876,7 +876,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -888,7 +888,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 descargará y almacenará una copia de la cadena de bloques de Bitcoin.</translation>
+        <translation>%1 descargará y almacenará una copia de la cadena de bloques de CPUchain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -919,11 +919,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de bitcoin, como se detalla abajo.</translation>
+        <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de cpuchain, como se detalla abajo.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>La red no aceptará el intentar gastar bitcoins que están afectados por transacciones aún no mostradas.</translation>
+        <translation>La red no aceptará el intentar gastar cpuchains que están afectados por transacciones aún no mostradas.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1093,7 +1093,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Bitcoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <translation>Abrir automáticamente el puerto del cliente CPUchain en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1109,7 +1109,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Conectarse a la red Bitcoin a través de un proxy SOCKS5.</translation>
+        <translation>Conectarse a la red CPUchain a través de un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1145,7 +1145,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectar a la red Bitcoin mediante un proxy SOCKS5 por separado para los servicios ocultos de Tor.</translation>
+        <translation>Conectar a la red CPUchain mediante un proxy SOCKS5 por separado para los servicios ocultos de Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1181,7 +1181,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían bitcoins.</translation>
+        <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían cpuchains.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1252,7 +1252,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Bitcoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red CPUchain después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1327,7 +1327,7 @@
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>No se puede iniciar bitcoin: encargado click-para-pagar</translation>
+        <translation>No se puede iniciar cpuchain: encargado click-para-pagar</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1343,7 +1343,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI no puede ser analizado! Esto puede ser causado por una dirección Bitcoin inválida o parametros URI mal formados.</translation>
+        <translation>URI no puede ser analizado! Esto puede ser causado por una dirección CPUchain inválida o parametros URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1445,7 +1445,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Introducir una dirección Bitcoin (p. ej. %1)</translation>
+        <translation>Introducir una dirección CPUchain (p. ej. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1869,7 +1869,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red Bitcoin.</translation>
+        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red CPUchain.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2022,7 +2022,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar bitcoins</translation>
+        <translation>Enviar cpuchains</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2106,7 +2106,7 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Pagar solamente la comisión mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones Bitcoin que la red pueda procesar.</translation>
+        <translation>Pagar solamente la comisión mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones CPUchain que la red pueda procesar.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2278,7 +2278,7 @@
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Alerta: dirección Bitcoin inválida</translation>
+        <translation>Alerta: dirección CPUchain inválida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2321,7 +2321,7 @@
     </message>
     <message>
         <source>The Bitcoin address to send the payment to</source>
-        <translation>Dirección Bitcoin a la que enviar el pago</translation>
+        <translation>Dirección CPUchain a la que enviar el pago</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2341,7 +2341,7 @@
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La comisión será deducida de la cantidad que sea mandada. El destinatario recibirá menos bitcoins de la cantidad introducida en el campo Cantidad. Si hay varios destinatarios, la comisión será distribuida a partes iguales.</translation>
+        <translation>La comisión será deducida de la cantidad que sea mandada. El destinatario recibirá menos cpuchains de la cantidad introducida en el campo Cantidad. Si hay varios destinatarios, la comisión será distribuida a partes iguales.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2369,7 +2369,7 @@
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Un mensaje que se adjuntó a la bitcoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red Bitcoin.</translation>
+        <translation>Un mensaje que se adjuntó a la cpuchain: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red CPUchain.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2418,7 +2418,7 @@
     </message>
     <message>
         <source>The Bitcoin address to sign the message with</source>
-        <translation>Dirección Bitcoin con la que firmar el mensaje</translation>
+        <translation>Dirección CPUchain con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2450,7 +2450,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Bitcoin</translation>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección CPUchain</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2474,11 +2474,11 @@
     </message>
     <message>
         <source>The Bitcoin address the message was signed with</source>
-        <translation>La dirección Bitcoin con la que se firmó el mensaje</translation>
+        <translation>La dirección CPUchain con la que se firmó el mensaje</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Bitcoin indicada</translation>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección CPUchain indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2703,7 +2703,7 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Los bitcoins generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
+        <translation>Los cpuchains generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3174,7 +3174,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>CPUchain Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

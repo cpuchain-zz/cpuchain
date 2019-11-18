@@ -81,4 +81,3 @@ int main (int argc, char *argv[])
 	outputEscape();
 	return 0;
 }
-

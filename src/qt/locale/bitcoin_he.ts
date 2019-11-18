@@ -419,7 +419,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :bitcoin)</translation>
+        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :cpuchain)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1295,7 +1295,7 @@
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>לא ניתן להפעיל את המקשר bitcoin: click-to-pay</translation>
+        <translation>לא ניתן להפעיל את המקשר cpuchain: click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>

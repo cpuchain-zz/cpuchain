@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas são suas informações para o envio de pagamentos por Bitcoins. Sempre cheque a quantia enviada e as informações do destinatário, antes de enviar os Bitcoins.</translation>
+        <translation>Estas são suas informações para o envio de pagamentos por CPUchains. Sempre cheque a quantia enviada e as informações do destinatário, antes de enviar os CPUchains.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas são suas informações para o recebimento de pagamentos por Bitcoins. É recomendado que seja feito o uso de um novo conjunto de informações para cada transação.</translation>
+        <translation>Estas são suas informações para o recebimento de pagamentos por CPUchains. É recomendado que seja feito o uso de um novo conjunto de informações para cada transação.</translation>
     </message>
     <message>
         <source>Export Address List</source>

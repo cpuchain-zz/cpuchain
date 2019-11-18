@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Þetta eru Bitcoin færslugildin sem senda greiðslur. Skoðið ævinlega vel upphæðina og færslugildin sem þiggja greiðslur áður en mynt er send.</translation>
+        <translation>Þetta eru CPUchain færslugildin sem senda greiðslur. Skoðið ævinlega vel upphæðina og færslugildin sem þiggja greiðslur áður en mynt er send.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Þetta eru Bitcoin færslugildin sem þiggja greiðslur. Mælt er með að nota aldrei sama færslugildið til að þiggja fleiri en eina greiðslu.</translation>
+        <translation>Þetta eru CPUchain færslugildin sem þiggja greiðslur. Mælt er með að nota aldrei sama færslugildið til að þiggja fleiri en eina greiðslu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI BITCOIN MYNT&lt;/b&gt;!</translation>
+        <translation>Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI CPUCHAIN MYNT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Senda mynt í Bitcoin færslugildi</translation>
+        <translation>Senda mynt í CPUchain færslugildi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -391,11 +391,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Kvitta undir skilaboð með Bitcoin færslugildunum þínum til að sanna að þú eigir þau</translation>
+        <translation>Kvitta undir skilaboð með CPUchain færslugildunum þínum til að sanna að þú eigir þau</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Yfirfara skilaboð til að tryggja að kvittað hafi verið fyrir þau með tilteknum Bitcoin færslugildum</translation>
+        <translation>Yfirfara skilaboð til að tryggja að kvittað hafi verið fyrir þau með tilteknum CPUchain færslugildum</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Óska eftir greiðslum (býr til QR kóða og bitcoin: URI)</translation>
+        <translation>Óska eftir greiðslum (býr til QR kóða og cpuchain: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -427,7 +427,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Opna bitcoin: URI eða greiðslubeiðni</translation>
+        <translation>Opna cpuchain: URI eða greiðslubeiðni</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -467,7 +467,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Sýna %1 hjálparskilaboðin til að fá lista yfir valkosti Bitcoin aðgerðir í skipanalínu</translation>
+        <translation>Sýna %1 hjálparskilaboðin til að fá lista yfir valkosti CPUchain aðgerðir í skipanalínu</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -537,7 +537,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Alvarleg villa átti sér stað. Bitcoin getur ekki haldið áfram með öruggum hætti og stoppar hér.</translation>
+        <translation>Alvarleg villa átti sér stað. CPUchain getur ekki haldið áfram með öruggum hætti og stoppar hér.</translation>
     </message>
 </context>
 <context>
@@ -655,7 +655,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Færslugildið sem slegið var inn "%1" er ekki leyfilegt Bitcoin færslugildi.</translation>
+        <translation>Færslugildið sem slegið var inn "%1" er ekki leyfilegt CPUchain færslugildi.</translation>
     </message>
     </context>
 <context>
@@ -668,7 +668,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -850,7 +850,7 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Það er í lagi að greiða einungis lágmarksupphæðina svo framarlega sem færslurúmtakið er minna en plássið í blokkunum. En gætið þess að þegar það er meiri eftirspurn eftir bitcoin færslum en netið getur unnið úr þá gæti svo farið að færslurnar verða aldrei samþykktar.</translation>
+        <translation>Það er í lagi að greiða einungis lágmarksupphæðina svo framarlega sem færslurúmtakið er minna en plássið í blokkunum. En gætið þess að þegar það er meiri eftirspurn eftir cpuchain færslum en netið getur unnið úr þá gæti svo farið að færslurnar verða aldrei samþykktar.</translation>
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>

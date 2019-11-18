@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ini adalah alamat- alamat Bitcoin Anda untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
+        <translation>Ini adalah alamat- alamat CPUchain Anda untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ini adalah alamat- alamat Bitcoin Anda untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerima yang baru setiap melakukan transaksi.</translation>
+        <translation>Ini adalah alamat- alamat CPUchain Anda untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerima yang baru setiap melakukan transaksi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Peringatan: Jika Anda enkripsi dompet Anda dan lupa kata sandi anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA BITCOIN ANDA&lt;/b&gt;!</translation>
+        <translation>Peringatan: Jika Anda enkripsi dompet Anda dan lupa kata sandi anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA CPUCHAIN ANDA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Kirim koin ke alamat Bitcoin</translation>
+        <translation>Kirim koin ke alamat CPUchain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -391,11 +391,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat Bitcoin Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
+        <translation>Tanda tangani sebuah pesan menggunakan alamat CPUchain Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Bitcoin tertentu</translation>
+        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat CPUchain tertentu</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Permintaan pembayaran (membuat kode QR dan bitcoin: URIs)</translation>
+        <translation>Permintaan pembayaran (membuat kode QR dan cpuchain: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -427,7 +427,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Buka URI bitcoin: atau permintaan pembayaran</translation>
+        <translation>Buka URI cpuchain: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -435,7 +435,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n koneksi aktif ke jaringan Bitcoin</numerusform></translation>
+        <translation><numerusform>%n koneksi aktif ke jaringan CPUchain</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -479,7 +479,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Bitcoin yang memungkinkan</translation>
+        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah CPUchain yang memungkinkan</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -549,7 +549,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Terjadi Kesalahan Fatal. Bitcoin Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
+        <translation>Terjadi Kesalahan Fatal. CPUchain Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
     </message>
 </context>
 <context>
@@ -731,7 +731,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Alamat yang dimasukkan "%1" bukanlah alamat Bitcoin yang valid.</translation>
+        <translation>Alamat yang dimasukkan "%1" bukanlah alamat CPUchain yang valid.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -848,7 +848,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -973,7 +973,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port client Bitcoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
+        <translation>Otomatis membuka port client CPUchain di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -981,7 +981,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Hubungkan ke jaringan Bitcoin melalui SOCKS5 proxy.</translation>
+        <translation>Hubungkan ke jaringan CPUchain melalui SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1092,7 +1092,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Bitcoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan CPUchain ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1153,7 +1153,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Masukkan alamat Bitcoin (contoh %1)</translation>
+        <translation>Masukkan alamat CPUchain (contoh %1)</translation>
     </message>
     <message>
         <source>%1 h</source>
@@ -1668,7 +1668,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Bitcoin ini</translation>
+        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat CPUchain ini</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1809,7 +1809,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>CPUchain Core</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>

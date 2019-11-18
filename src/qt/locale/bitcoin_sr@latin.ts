@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su Vaše Bitcoin adrese na koju se vrše uplate. Uvek proverite iznos i prijemnu adresu pre slanja novčića.</translation>
+        <translation>Ovo su Vaše CPUchain adrese na koju se vrše uplate. Uvek proverite iznos i prijemnu adresu pre slanja novčića.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ovo su Vaše Bitcoin adrese za primanje uplata. Preporučuje se upotreba nove adrese za svaku transakciju.</translation>
+        <translation>Ovo su Vaše CPUchain adrese za primanje uplata. Preporučuje se upotreba nove adrese za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 će se ugasiti da bi dovršio proces enkriptovanja. Imajte u vidu da enkripcija novčanika ne garantuje potpunu zaštitu bitcoina od krađe od strane nekog virusa koji bi zarazio vaš kompjuter.</translation>
+        <translation>%1 će se ugasiti da bi dovršio proces enkriptovanja. Imajte u vidu da enkripcija novčanika ne garantuje potpunu zaštitu cpuchaina od krađe od strane nekog virusa koji bi zarazio vaš kompjuter.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Pošalji novčiće na Bitcoin adresu</translation>
+        <translation>Pošalji novčiće na CPUchain adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -391,11 +391,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Potpišite poruke sa svojim Bitcoin adresama da biste dokazali njihovo vlasništvo</translation>
+        <translation>Potpišite poruke sa svojim CPUchain adresama da biste dokazali njihovo vlasništvo</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Proverite poruke da biste utvrdili sa kojim Bitcoin adresama su potpisane</translation>
+        <translation>Proverite poruke da biste utvrdili sa kojim CPUchain adresama su potpisane</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Zatražite plaćanje (generiše QR kodove i bitcoin: URI-e)</translation>
+        <translation>Zatražite plaćanje (generiše QR kodove i cpuchain: URI-e)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -520,7 +520,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -687,7 +687,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>CPUchain Core</translation>
     </message>
     <message>
         <source>Information</source>

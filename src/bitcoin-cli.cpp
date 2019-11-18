@@ -38,7 +38,6 @@ std::string HelpMessageCli()
     strUsage += HelpMessageOpt("-?", _("This help message"));
     strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), BITCOIN_CONF_FILENAME));
     strUsage += HelpMessageOpt("-datadir=<dir>", _("Specify data directory"));
-    strUsage += HelpMessageOpt("-getinfo", _("Get general information from the remote server. Note that unlike server-side RPC calls, the results of -getinfo is the result of multiple non-atomic requests. Some entries in the result may represent results from different states (e.g. wallet balance may be as of a different block from the chain state reported)"));
     AppendParamsHelpMessages(strUsage);
     strUsage += HelpMessageOpt("-named", strprintf(_("Pass named instead of positional arguments (default: %s)"), DEFAULT_NAMED));
     strUsage += HelpMessageOpt("-rpcconnect=<ip>", strprintf(_("Send commands to node running on <ip> (default: %s)"), DEFAULT_RPCCONNECT));
@@ -49,7 +48,7 @@ std::string HelpMessageCli()
     strUsage += HelpMessageOpt("-rpcclienttimeout=<n>", strprintf(_("Timeout in seconds during HTTP requests, or 0 for no timeout. (default: %d)"), DEFAULT_HTTP_CLIENT_TIMEOUT));
     strUsage += HelpMessageOpt("-stdinrpcpass", strprintf(_("Read RPC password from standard input as a single line.  When combined with -stdin, the first line from standard input is used for the RPC password.")));
     strUsage += HelpMessageOpt("-stdin", _("Read extra arguments from standard input, one per line until EOF/Ctrl-D (recommended for sensitive information such as passphrases).  When combined with -stdinrpcpass, the first line from standard input is used for the RPC password."));
-    strUsage += HelpMessageOpt("-rpcwallet=<walletname>", _("Send RPC for non-default wallet on RPC server (argument is wallet filename in bitcoind directory, required if bitcoind/-Qt runs with multiple wallets)"));
+    strUsage += HelpMessageOpt("-rpcwallet=<walletname>", _("Send RPC for non-default wallet on RPC server (argument is wallet filename in cpuchaind directory, required if cpuchaind/-Qt runs with multiple wallets)"));
 
     return strUsage;
 }
@@ -87,10 +86,10 @@ static int AppInitRPC(int argc, char* argv[])
         std::string strUsage = strprintf(_("%s RPC client version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n";
         if (!gArgs.IsArgSet("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  bitcoin-cli [options] <command> [params]  " + strprintf(_("Send command to %s"), _(PACKAGE_NAME)) + "\n" +
-                  "  bitcoin-cli [options] -named <command> [name=value] ... " + strprintf(_("Send command to %s (with named arguments)"), _(PACKAGE_NAME)) + "\n" +
-                  "  bitcoin-cli [options] help                " + _("List commands") + "\n" +
-                  "  bitcoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  cpuchain-cli [options] <command> [params]  " + strprintf(_("Send command to %s"), _(PACKAGE_NAME)) + "\n" +
+                  "  cpuchain-cli [options] -named <command> [name=value] ... " + strprintf(_("Send command to %s (with named arguments)"), _(PACKAGE_NAME)) + "\n" +
+                  "  cpuchain-cli [options] help                " + _("List commands") + "\n" +
+                  "  cpuchain-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }
@@ -201,68 +200,6 @@ class BaseRequestHandler
 public:
     virtual UniValue PrepareRequest(const std::string& method, const std::vector<std::string>& args) = 0;
     virtual UniValue ProcessReply(const UniValue &batch_in) = 0;
-};
-
-/** Process getinfo requests */
-class GetinfoRequestHandler: public BaseRequestHandler
-{
-public:
-    const int ID_NETWORKINFO = 0;
-    const int ID_BLOCKCHAININFO = 1;
-    const int ID_WALLETINFO = 2;
-
-    /** Create a simulated `getinfo` request. */
-    UniValue PrepareRequest(const std::string& method, const std::vector<std::string>& args) override
-    {
-        if (!args.empty()) {
-            throw std::runtime_error("-getinfo takes no arguments");
-        }
-        UniValue result(UniValue::VARR);
-        result.push_back(JSONRPCRequestObj("getnetworkinfo", NullUniValue, ID_NETWORKINFO));
-        result.push_back(JSONRPCRequestObj("getblockchaininfo", NullUniValue, ID_BLOCKCHAININFO));
-        result.push_back(JSONRPCRequestObj("getwalletinfo", NullUniValue, ID_WALLETINFO));
-        return result;
-    }
-
-    /** Collect values from the batch and form a simulated `getinfo` reply. */
-    UniValue ProcessReply(const UniValue &batch_in) override
-    {
-        UniValue result(UniValue::VOBJ);
-        std::vector<UniValue> batch = JSONRPCProcessBatchReply(batch_in, 3);
-        // Errors in getnetworkinfo() and getblockchaininfo() are fatal, pass them on
-        // getwalletinfo() is allowed to fail in case there is no wallet.
-        if (!batch[ID_NETWORKINFO]["error"].isNull()) {
-            return batch[ID_NETWORKINFO];
-        }
-        if (!batch[ID_BLOCKCHAININFO]["error"].isNull()) {
-            return batch[ID_BLOCKCHAININFO];
-        }
-        result.pushKV("version", batch[ID_NETWORKINFO]["result"]["version"]);
-        result.pushKV("protocolversion", batch[ID_NETWORKINFO]["result"]["protocolversion"]);
-        if (!batch[ID_WALLETINFO].isNull()) {
-            result.pushKV("walletversion", batch[ID_WALLETINFO]["result"]["walletversion"]);
-            result.pushKV("balance", batch[ID_WALLETINFO]["result"]["balance"]);
-        }
-        result.pushKV("blocks", batch[ID_BLOCKCHAININFO]["result"]["blocks"]);
-        result.pushKV("timeoffset", batch[ID_NETWORKINFO]["result"]["timeoffset"]);
-        result.pushKV("connections", batch[ID_NETWORKINFO]["result"]["connections"]);
-        result.pushKV("proxy", batch[ID_NETWORKINFO]["result"]["networks"][0]["proxy"]);
-        result.pushKV("difficulty", batch[ID_BLOCKCHAININFO]["result"]["difficulty"]);
-        result.pushKV("testnet", UniValue(batch[ID_BLOCKCHAININFO]["result"]["chain"].get_str() == "test"));
-        if (!batch[ID_WALLETINFO].isNull()) {
-            result.pushKV("walletversion", batch[ID_WALLETINFO]["result"]["walletversion"]);
-            result.pushKV("balance", batch[ID_WALLETINFO]["result"]["balance"]);
-            result.pushKV("keypoololdest", batch[ID_WALLETINFO]["result"]["keypoololdest"]);
-            result.pushKV("keypoolsize", batch[ID_WALLETINFO]["result"]["keypoolsize"]);
-            if (!batch[ID_WALLETINFO]["result"]["unlocked_until"].isNull()) {
-                result.pushKV("unlocked_until", batch[ID_WALLETINFO]["result"]["unlocked_until"]);
-            }
-            result.pushKV("paytxfee", batch[ID_WALLETINFO]["result"]["paytxfee"]);
-        }
-        result.pushKV("relayfee", batch[ID_NETWORKINFO]["result"]["relayfee"]);
-        result.pushKV("warnings", batch[ID_NETWORKINFO]["result"]["warnings"]);
-        return JSONRPCReplyObj(result, NullUniValue, 1);
-    }
 };
 
 /** Process default single requests */
@@ -405,17 +342,12 @@ int CommandLineRPC(int argc, char *argv[])
         }
         std::unique_ptr<BaseRequestHandler> rh;
         std::string method;
-        if (gArgs.GetBoolArg("-getinfo", false)) {
-            rh.reset(new GetinfoRequestHandler());
-            method = "";
-        } else {
-            rh.reset(new DefaultRequestHandler());
-            if (args.size() < 1) {
-                throw std::runtime_error("too few parameters (need at least command)");
-            }
-            method = args[0];
-            args.erase(args.begin()); // Remove trailing method name from arguments vector
+        rh.reset(new DefaultRequestHandler());
+        if (args.size() < 1) {
+            throw std::runtime_error("too few parameters (need at least command)");
         }
+        method = args[0];
+        args.erase(args.begin()); // Remove trailing method name from arguments vector
 
         // Execute and handle connection failures with -rpcwait
         const bool fWait = gArgs.GetBoolArg("-rpcwait", false);
@@ -444,7 +376,7 @@ int CommandLineRPC(int argc, char *argv[])
                             strPrint += "error message:\n"+errMsg.get_str();
 
                         if (errCode.isNum() && errCode.get_int() == RPC_WALLET_NOT_SPECIFIED) {
-                            strPrint += "\nTry adding \"-rpcwallet=<filename>\" option to bitcoin-cli command line.";
+                            strPrint += "\nTry adding \"-rpcwallet=<filename>\" option to cpuchain-cli command line.";
                         }
                     }
                 } else {

@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core]])
-AC_INIT([Bitcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/bitcoin/bitcoin/issues],[bitcoin],[https://bitcoincore.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[CPUchain Core]])
+AC_INIT([CPUchain Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/cpuchain/cpuchain/issues],[cpuchain],[https://cpuchain.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=bitcoind
-BITCOIN_GUI_NAME=bitcoin-qt
-BITCOIN_CLI_NAME=bitcoin-cli
-BITCOIN_TX_NAME=bitcoin-tx
+BITCOIN_DAEMON_NAME=cpuchaind
+BITCOIN_GUI_NAME=cpuchain-qt
+BITCOIN_CLI_NAME=cpuchain-cli
+BITCOIN_TX_NAME=cpuchain-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -103,6 +103,12 @@ AC_ARG_ENABLE([wallet],
   [enable_wallet=$enableval],
   [enable_wallet=yes])
 
+AC_ARG_ENABLE([bitcore-rpc],
+  [AS_HELP_STRING([--enable-bitcore-rpc],
+  [enable bitcore rpc (default is no)])],
+  [enable_bitcore_rpc=$enableval],
+  [enable_bitcore_rpc=no])
+
 AC_ARG_WITH([miniupnpc],
   [AS_HELP_STRING([--with-miniupnpc],
   [enable UPNP (default is yes if libminiupnpc is found)])],
@@ -116,19 +122,19 @@ AC_ARG_ENABLE([upnp-default],
   [use_upnp_default=no])
 
 AC_ARG_ENABLE(tests,
-    AS_HELP_STRING([--disable-tests],[do not compile tests (default is to compile)]),
+    AS_HELP_STRING([--enable-tests],[do compile tests (default is not to compile)]),
     [use_tests=$enableval],
-    [use_tests=yes])
+    [use_tests=no])
 
 AC_ARG_ENABLE(gui-tests,
-    AS_HELP_STRING([--disable-gui-tests],[do not compile GUI tests (default is to compile if GUI and tests enabled)]),
+    AS_HELP_STRING([--enable-gui-tests],[do compile GUI tests (default is not to compile)]),
     [use_gui_tests=$enableval],
     [use_gui_tests=$use_tests])
 
 AC_ARG_ENABLE(bench,
-    AS_HELP_STRING([--disable-bench],[do not compile benchmarks (default is to compile)]),
+    AS_HELP_STRING([--enable-bench],[do compile benchmarks (default is not to compile)]),
     [use_bench=$enableval],
-    [use_bench=yes])
+    [use_bench=no])
 
 AC_ARG_ENABLE([extended-functional-tests],
     AS_HELP_STRING([--enable-extended-functional-tests],[enable expensive functional tests when using lcov (default no)]),
@@ -234,6 +240,8 @@ if test "x$enable_debug" = xyes; then
         CXXFLAGS="$CXXFLAGS -g3 -O0"
     fi
 fi
+
+CFLAGS="$CFLAGS -fPIC"
 
 ERROR_CXXFLAGS=
 if test "x$enable_werror" = "xyes"; then
@@ -1107,6 +1115,16 @@ else
   AC_MSG_RESULT(no)
 fi
 
+dnl enable bitcore rpc
+AC_MSG_CHECKING([if bitcore rpc should be enabled])
+if test x$enable_bitcore_rpc != xno; then
+  AC_MSG_RESULT(yes)
+  AC_DEFINE_UNQUOTED([ENABLE_BITCORE_RPC],[1],[Define to 1 to enable bitcore rpc functions])
+
+else
+  AC_MSG_RESULT(no)
+fi
+
 dnl enable upnp support
 AC_MSG_CHECKING([whether to build with support for UPnP])
 if test x$have_miniupnpc = xno; then
@@ -1200,6 +1218,7 @@ AM_CONDITIONAL([TARGET_DARWIN], [test x$TARGET_OS = xdarwin])
 AM_CONDITIONAL([BUILD_DARWIN], [test x$BUILD_OS = xdarwin])
 AM_CONDITIONAL([TARGET_WINDOWS], [test x$TARGET_OS = xwindows])
 AM_CONDITIONAL([ENABLE_WALLET],[test x$enable_wallet = xyes])
+AM_CONDITIONAL([ENABLE_BITCORE_RPC],[test x$enable_bitcore_rpc = xyes])
 AM_CONDITIONAL([ENABLE_TESTS],[test x$BUILD_TEST = xyes])
 AM_CONDITIONAL([ENABLE_QT],[test x$bitcoin_enable_qt = xyes])
 AM_CONDITIONAL([ENABLE_QT_TESTS],[test x$BUILD_TEST_QT = xyes])
@@ -1319,6 +1338,7 @@ esac
 echo
 echo "Options used to compile and link:"
 echo "  with wallet   = $enable_wallet"
+echo "  with explorer = $enable_bitcore_rpc"
 echo "  with gui / qt = $bitcoin_enable_qt"
 if test x$bitcoin_enable_qt != xno; then
     echo "    qt version  = $bitcoin_qt_got_major_vers"

@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Đây là địa chỉ Bitcoin của bạn để nhận thanh toán. Khuyến cáo nên sử dụng địa chỉ mới cho mỗi giao dịch.</translation>
+        <translation>Đây là địa chỉ CPUchain của bạn để nhận thanh toán. Khuyến cáo nên sử dụng địa chỉ mới cho mỗi giao dịch.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Cảnh báo: Nếu bạn mã hóa ví và mất cụm mật khẩu, bạn sẽ &lt;b&gt;MẤT TẤT CẢ BITCOIN&lt;/b&gt;!</translation>
+        <translation>Cảnh báo: Nếu bạn mã hóa ví và mất cụm mật khẩu, bạn sẽ &lt;b&gt;MẤT TẤT CẢ CPUCHAIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 sẽ đóng lúc này để kết thúc quá trình mã hóa. Nhớ rằng việc mã hóa ví không thể bảo vệ hoàn toàn số bitcoins khỏi việc Malware lây nhiễm đến computer của bạn.</translation>
+        <translation>%1 sẽ đóng lúc này để kết thúc quá trình mã hóa. Nhớ rằng việc mã hóa ví không thể bảo vệ hoàn toàn số cpuchains khỏi việc Malware lây nhiễm đến computer của bạn.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -335,7 +335,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Gửi coin đến một địa chỉ Bitcoin</translation>
+        <translation>Gửi coin đến một địa chỉ CPUchain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -387,11 +387,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Đăng ký lời nhắn với địa chỉ Bitcoin của bạn để chứng minh quyền sở hữu chúng</translation>
+        <translation>Đăng ký lời nhắn với địa chỉ CPUchain của bạn để chứng minh quyền sở hữu chúng</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Xác minh lời nhắn để chắc chắn đã được đăng ký với địa chỉ Bitcoin xác định</translation>
+        <translation>Xác minh lời nhắn để chắc chắn đã được đăng ký với địa chỉ CPUchain xác định</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -411,7 +411,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Yêu cầu thanh toán (tạo QR code và bitcoin: URIs)</translation>
+        <translation>Yêu cầu thanh toán (tạo QR code và cpuchain: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -423,7 +423,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Mở một bitcoin: URI hoặc yêu cầu thanh toán</translation>
+        <translation>Mở một cpuchain: URI hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -431,7 +431,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n kết nối đến Bitcoin network</numerusform></translation>
+        <translation><numerusform>%n kết nối đến CPUchain network</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -475,7 +475,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Hiển thị %1 tin nhắn hỗ trợ để nhận được danh sách Bitcoin command-line khả dụng</translation>
+        <translation>Hiển thị %1 tin nhắn hỗ trợ để nhận được danh sách CPUchain command-line khả dụng</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -545,7 +545,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Một lỗi nghiêm trọng vừa xảy ra. Bitcoin có thể không còn tiếp tục an toàn và sẽ bị bỏ.</translation>
+        <translation>Một lỗi nghiêm trọng vừa xảy ra. CPUchain có thể không còn tiếp tục an toàn và sẽ bị bỏ.</translation>
     </message>
 </context>
 <context>
@@ -739,7 +739,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Address đã nhập "%1" không valid Bitcoin address.</translation>
+        <translation>Address đã nhập "%1" không valid CPUchain address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -868,7 +868,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -880,7 +880,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 sẽ download và lưu trữ một bản copy của Bitcoin block chain.</translation>
+        <translation>%1 sẽ download và lưu trữ một bản copy của CPUchain block chain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -911,11 +911,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Giao dịch gần đây có thể chưa được hiển thị, và vì vậy số dư wallet của bạn có thể không dúng. Thông tin này sẽ được làm đúng khi wallet hoàn thành đồng bộ với bitcoin network, như chi tiết bên dưới.</translation>
+        <translation>Giao dịch gần đây có thể chưa được hiển thị, và vì vậy số dư wallet của bạn có thể không dúng. Thông tin này sẽ được làm đúng khi wallet hoàn thành đồng bộ với cpuchain network, như chi tiết bên dưới.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Cố gắng spend các bitcoins bị ảnh hưởng bởi các giao dịch chưa được hiển thị sẽ không được chấp nhận bởi mạng.</translation>
+        <translation>Cố gắng spend các cpuchains bị ảnh hưởng bởi các giao dịch chưa được hiển thị sẽ không được chấp nhận bởi mạng.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1073,7 +1073,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <translation>Automatically open the CPUchain client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1081,7 +1081,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến Bitcoin network qua một SOCKS5 proxy.</translation>
+        <translation>Kết nối đến CPUchain network qua một SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1117,7 +1117,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Kết nối đến Bitcoin network qua một nhánh rời SOCKS5 proxy của Tor hidden services.</translation>
+        <translation>Kết nối đến CPUchain network qua một nhánh rời SOCKS5 proxy của Tor hidden services.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1220,7 +1220,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Thông tin được hiển thị có thể đã lỗi thời. Cái wallet tự động đồng bộ với Bitcoin network sau một connection được thiết lập, nhưng quá trình này vẫn chưa completed yet.</translation>
+        <translation>Thông tin được hiển thị có thể đã lỗi thời. Cái wallet tự động đồng bộ với CPUchain network sau một connection được thiết lập, nhưng quá trình này vẫn chưa completed yet.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1295,7 +1295,7 @@
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Không thể khởi tạo bitcoin: click-to-pay handler</translation>
+        <translation>Không thể khởi tạo cpuchain: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1311,7 +1311,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI không thể phân tích cú pháp! Đây có thể gây nên bởi invalid Bitcoin address hoặc URI không đúng định dạng tham số.</translation>
+        <translation>URI không thể phân tích cú pháp! Đây có thể gây nên bởi invalid CPUchain address hoặc URI không đúng định dạng tham số.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1413,7 +1413,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Nhập một Bitcoin address (e.g. %1)</translation>
+        <translation>Nhập một CPUchain address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1829,7 +1829,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Một optional lời nhắn để đính kèm đến payment request, cái mà sẽ được hiển thị khi mà request đang mở. Lưu ý: Tin nhắn này sẽ không được gửi với payment over the Bitcoin network.</translation>
+        <translation>Một optional lời nhắn để đính kèm đến payment request, cái mà sẽ được hiển thị khi mà request đang mở. Lưu ý: Tin nhắn này sẽ không được gửi với payment over the CPUchain network.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2066,7 +2066,7 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Chi trả chỉ số nhỏ nhất fee thì ổn cho tới khi có ít transaction volume hơn khoảng trống trong blocks. Nhưng nhận ra rằng điều này kết thúc trong việc chẳng bao giờ xác nhận transaction trừ khi có nhiều nhu cầu cho giao dịch bitcoin hơn so với mạng có thể xử lý.</translation>
+        <translation>Chi trả chỉ số nhỏ nhất fee thì ổn cho tới khi có ít transaction volume hơn khoảng trống trong blocks. Nhưng nhận ra rằng điều này kết thúc trong việc chẳng bao giờ xác nhận transaction trừ khi có nhiều nhu cầu cho giao dịch cpuchain hơn so với mạng có thể xử lý.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2222,7 +2222,7 @@
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Warning: Invalid Bitcoin address</translation>
+        <translation>Warning: Invalid CPUchain address</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2265,7 +2265,7 @@
     </message>
     <message>
         <source>The Bitcoin address to send the payment to</source>
-        <translation>The Bitcoin address để gửi the payment đến</translation>
+        <translation>The CPUchain address để gửi the payment đến</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2285,7 +2285,7 @@
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>The fee sẽ được khấu trừ từ số tiền đang gửi. Người nhận sẽ receive ít bitcoins hơn bạn gõ vào khoảng trống. Nếu nhiều người gửi được chọn, fee sẽ được chia đều.</translation>
+        <translation>The fee sẽ được khấu trừ từ số tiền đang gửi. Người nhận sẽ receive ít cpuchains hơn bạn gõ vào khoảng trống. Nếu nhiều người gửi được chọn, fee sẽ được chia đều.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2309,7 +2309,7 @@
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Một tin nhắn được đính kèm với số bitcoin: URI mà sẽ được lưu giữ với transaction dành cho tài liệu tham khảo. Lưu ý: Tin nhắn này sẽ không được gửi thông qua Bitcoin network.</translation>
+        <translation>Một tin nhắn được đính kèm với số cpuchain: URI mà sẽ được lưu giữ với transaction dành cho tài liệu tham khảo. Lưu ý: Tin nhắn này sẽ không được gửi thông qua CPUchain network.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2354,11 +2354,11 @@
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Bạn có thể ký/đồng ý với địa chỉ chứng minh bạn có thể receive bitcoins đã gửi đến chúng. Cẩn thận không ký bất cứ không rõ hay random, như các cuộc tấn công lừa đảo có thể cố lừa bạn ký tên vào danh tính của bạn.. Chỉ ký các bản tuyên bố hoàn chỉnh mà bạn đồng ý.</translation>
+        <translation>Bạn có thể ký/đồng ý với địa chỉ chứng minh bạn có thể receive cpuchains đã gửi đến chúng. Cẩn thận không ký bất cứ không rõ hay random, như các cuộc tấn công lừa đảo có thể cố lừa bạn ký tên vào danh tính của bạn.. Chỉ ký các bản tuyên bố hoàn chỉnh mà bạn đồng ý.</translation>
     </message>
     <message>
         <source>The Bitcoin address to sign the message with</source>
-        <translation>The Bitcoin address để ký với tin nhắn</translation>
+        <translation>The CPUchain address để ký với tin nhắn</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2390,7 +2390,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Ký tin nhắn để chứng minh bạn sở hữu Bitcoin address này</translation>
+        <translation>Ký tin nhắn để chứng minh bạn sở hữu CPUchain address này</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2414,11 +2414,11 @@
     </message>
     <message>
         <source>The Bitcoin address the message was signed with</source>
-        <translation>The Bitcoin address tin nhắn đã ký với</translation>
+        <translation>The CPUchain address tin nhắn đã ký với</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verify tin nhắn để chắc rằng nó đã được ký với xác định Bitcoin address</translation>
+        <translation>Verify tin nhắn để chắc rằng nó đã được ký với xác định CPUchain address</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3107,7 +3107,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>CPUchain Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

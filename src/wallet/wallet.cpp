@@ -3963,6 +3963,22 @@ CWallet* CWallet::CreateWalletFromFile(const std::string walletFile)
             return nullptr;
         }
 
+        // segwit address
+        // CPubKey newDefaultKeySegWit;
+        // if (walletInstance->GetKeyFromPool(newDefaultKeySegWit, false)) {
+        //    walletInstance->LearnRelatedScripts(newDefaultKeySegWit, OutputType::OUTPUT_TYPE_P2SH_SEGWIT);
+        //    CTxDestination dest = GetDestinationForKey(newDefaultKeySegWit, OutputType::OUTPUT_TYPE_P2SH_SEGWIT);
+        //    walletInstance->SetAddressBook(dest, "", "receive");
+        // }
+
+        // legacy address
+        CPubKey newDefaultKeyLegacy;
+        if (walletInstance->GetKeyFromPool(newDefaultKeyLegacy, false)) {
+            walletInstance->LearnRelatedScripts(newDefaultKeyLegacy, OutputType::OUTPUT_TYPE_LEGACY);
+            CTxDestination dest = GetDestinationForKey(newDefaultKeyLegacy, OutputType::OUTPUT_TYPE_LEGACY);
+            walletInstance->SetAddressBook(dest, "", "receive");
+        }
+
         walletInstance->SetBestChain(chainActive.GetLocator());
     }
     else if (gArgs.IsArgSet("-usehd")) {

@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Enviar monedas a una dirección Bitcoin</translation>
+        <translation>Enviar monedas a una dirección CPUchain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -167,7 +167,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -195,11 +195,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Bitcoin para demostrar la propiedad</translation>
+        <translation>Firmar mensajes con sus direcciones CPUchain para demostrar la propiedad</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Bitcoin concretas</translation>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones CPUchain concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -219,7 +219,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Bitcoin)</translation>
+        <translation>Solicitar pagos (genera codigo QR y URL's de CPUchain)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Abrir un bitcoin: URI o petición de pago</translation>
+        <translation>Abrir un cpuchain: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -422,7 +422,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -499,7 +499,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Bitcoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <translation>Abrir automáticamente el puerto del cliente CPUchain en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -598,7 +598,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Bitcoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red CPUchain después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1012,7 +1012,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Bitcoin</translation>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección CPUchain</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1032,7 +1032,7 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Bitcoin indicada</translation>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección CPUchain indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1116,7 +1116,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Núcleo de Bitcoin</translation>
+        <translation>Núcleo de CPUchain</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

@@ -15,7 +15,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     </context>
 <context>
@@ -34,7 +34,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>CPUchain</translation>
     </message>
     </context>
 <context>
@@ -161,7 +161,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Jezrga</translation>
+        <translation>CPUchain Jezrga</translation>
     </message>
     </context>
 </TS>

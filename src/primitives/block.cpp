@@ -12,7 +12,7 @@
 
 uint256 CBlockHeader::GetHash() const
 {
-    return SerializeHash(*this);
+    return SerializeHashYespower(*this);
 }
 
 std::string CBlock::ToString() const
