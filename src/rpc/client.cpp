@@ -164,6 +164,8 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "createwallet", 2, "blank"},
     { "getnodeaddresses", 0, "count"},
     { "stop", 0, "wait" },
+    { "getaddressutxos", 1, "amount" },
+    { "getaddressutxos", 2, "includechaininfo" },
 };
 // clang-format on
 

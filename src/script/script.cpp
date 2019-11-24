@@ -194,6 +194,17 @@ unsigned int CScript::GetSigOpCount(const CScript& scriptSig) const
     return subscript.GetSigOpCount(true);
 }
 
+bool CScript::IsPayToPublicKeyHash() const
+{
+    // Extra-fast test for pay-to-pubkey-hash CScripts:
+    return (this->size() == 25 &&
+        (*this)[0] == OP_DUP &&
+        (*this)[1] == OP_HASH160 &&
+        (*this)[2] == 0x14 &&
+        (*this)[23] == OP_EQUALVERIFY &&
+        (*this)[24] == OP_CHECKSIG);
+}
+
 bool CScript::IsPayToScriptHash() const
 {
     // Extra-fast test for pay-to-script-hash CScripts:
@@ -209,6 +220,15 @@ bool CScript::IsPayToWitnessScriptHash() const
     return (this->size() == 34 &&
             (*this)[0] == OP_0 &&
             (*this)[1] == 0x20);
+}
+
+
+bool CScript::IsPayToWitnessPubkeyHash() const
+{
+    // Extra-fast test for pay-to-witness-pubkey-hash CScripts:
+    return (this->size() == 22 &&
+            (*this)[0] == OP_0 &&
+            (*this)[1] == 0x14);
 }
 
 // A witness program is any valid CScript that consists of a 1-byte push opcode
