@@ -54,7 +54,7 @@
 #include "sha256.h"
 #include "sysendian.h"
 
-#include "yespower.h"
+#include "cpupower.h"
 
 static void blkcpy(uint32_t *dst, const uint32_t *src, size_t count)
 {

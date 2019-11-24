@@ -49,6 +49,7 @@
  * no slowdown from the prefixes is generally observed on AMD CPUs supporting
  * XOP, some slowdown is sometimes observed on Intel CPUs with AVX.
  */
+
 /*
 #ifdef __XOP__
 #warning "Note: XOP is enabled.  That's great."
@@ -100,9 +101,9 @@
 #include "sha256.h"
 #include "sysendian.h"
 
-#include "yespower.h"
+#include "cpupower.h"
 
-#include "yespower-platform.c"
+#include "cpupower-platform.c"
 
 #if __STDC_VERSION__ >= 199901L
 /* Have restrict */
@@ -529,7 +530,9 @@ static volatile uint64_t Smask2var = Smask2;
 /* 64-bit without AVX.  This relies on out-of-order execution and register
  * renaming.  It may actually be fastest on CPUs with AVX(2) as well - e.g.,
  * it runs great on Haswell. */
+ /*
 #warning "Note: using x86-64 inline assembly for pwxform.  That's great."
+*/
 #undef MAYBE_MEMORY_BARRIER
 #define MAYBE_MEMORY_BARRIER \
 	__asm__("" : : : "memory");
@@ -1017,7 +1020,7 @@ static void smix(uint8_t *B, size_t r, uint32_t N,
 #define smix1 smix1_1_0
 #define smix2 smix2_1_0
 #define smix smix_1_0
-#include "yespower-opt.c"
+#include "cpupower-opt.c"
 #undef smix
 
 /**

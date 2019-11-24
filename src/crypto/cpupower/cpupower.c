@@ -1,6 +1,6 @@
-#include "yespower.h"
+#include "cpupower.h"
 
-int yespower_hash(const char *input, char *output)
+int cpupower_hash(const char *input, char *output)
 {
 	yespower_params_t params = {
 		.version = YESPOWER_1_0,

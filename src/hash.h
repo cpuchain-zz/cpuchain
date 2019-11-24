@@ -191,16 +191,16 @@ public:
     }
 };
 
-extern "C" void yespower_hash(const char *input, char *output);
+extern "C" void cpupower_hash(const char *input, char *output);
 
-class CHashWriterYespower: public CHashWriter
+class CHashWriterCPUpower: public CHashWriter
 {
 private:
     std::vector<unsigned char> buf;
 
 public:
 
-    CHashWriterYespower(int nTypeIn, int nVersionIn) : CHashWriter(nTypeIn, nVersionIn) {}
+    CHashWriterCPUpower(int nTypeIn, int nVersionIn) : CHashWriter(nTypeIn, nVersionIn) {}
 
     void write(const char *pch, size_t size) {
         buf.insert(buf.end(), pch, pch + size);
@@ -208,12 +208,12 @@ public:
 
     uint256 GetHash() {
         uint256 result;
-        yespower_hash((const char*)buf.data(), (char*)&result);
+        cpupower_hash((const char*)buf.data(), (char*)&result);
         return result;
     }
 
     template<typename T>
-    CHashWriterYespower& operator<<(const T& obj) {
+    CHashWriterCPUpower& operator<<(const T& obj) {
         // Serialize to this stream
         ::Serialize(*this, obj);
         return (*this);
@@ -230,9 +230,9 @@ uint256 SerializeHash(const T& obj, int nType=SER_GETHASH, int nVersion=PROTOCOL
 }
 
 template<typename T>
-uint256 SerializeHashYespower(const T& obj, int nType=SER_GETHASH, int nVersion=PROTOCOL_VERSION)
+uint256 SerializeHashCPUpower(const T& obj, int nType=SER_GETHASH, int nVersion=PROTOCOL_VERSION)
 {
-    CHashWriterYespower ss(nType, nVersion);
+    CHashWriterCPUpower ss(nType, nVersion);
     ss << obj;
     return ss.GetHash();
 }
