@@ -165,7 +165,6 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "getnodeaddresses", 0, "count"},
     { "stop", 0, "wait" },
     { "getaddressutxos", 1, "amount" },
-    { "getaddressutxos", 2, "includechaininfo" },
 };
 // clang-format on
 
