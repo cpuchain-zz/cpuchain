@@ -8,7 +8,6 @@
 #include <uint256.h>
 #include <util/strencodings.h>
 #include <script/standard.h>
-#include <key_io.h>
 
 #include <assert.h>
 #include <string.h>
